@@ -74,16 +74,16 @@ const integrantes = [
     image: "/equipo/victoria-caro.jpeg",
   },
   {
-    name: "Roque Bielli",
-    role: "Director del Grupo",
-    title: "Mgtr. Bioingeniero",
-    image: "/equipo/roque-bielli.jpeg",
-  },
-  {
     name: "Angel Quiles",
     role: "Secretario Extensión Universitaria",
     title: "Esp. Ing. Industrial",
     image: "/equipo/angel-quiles.jpeg",
+  },
+  {
+    name: "Emiliano Moreno",
+    role: "Logística",
+    title: "Tec. en Logística y Transporte",
+    image: "/equipo/emiliano-moreno.jpeg",
   },
   {
     name: "Mariana Nunes",
@@ -92,10 +92,10 @@ const integrantes = [
     image: "/equipo/mariana-nunes.jpeg",
   },
   {
-    name: "Emiliano Moreno",
-    role: "Logística",
-    title: "Tec. Esp.",
-    image: "/equipo/emiliano-moreno.jpeg",
+    name: "Roque Bielli",
+    role: "Director del Grupo",
+    title: "Mgtr. Bioingeniero",
+    image: "/equipo/roque-bielli.jpeg",
   },
 ]
 
@@ -417,7 +417,7 @@ export default function LandingPage() {
                   </div>
                   <div>
                     <img
-                      src="/placeholder-user.jpg"
+                      src="/geomonitor-logo.png"
                       alt="Logo de Condor View"
                       className="h-[20rem] w-auto object-contain mx-auto mb-4"
                     />
