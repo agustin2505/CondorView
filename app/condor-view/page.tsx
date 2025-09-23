@@ -15,6 +15,7 @@ import {
   ChevronRight,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function CondorViewPage() {
   return (
@@ -189,8 +190,46 @@ export default function CondorViewPage() {
           </div>
         </section>
 
-        {/* Etapas del Proyecto */}
+        {/* Video Pitch Section */}
         <section className="w-full py-16 md:py-24 bg-slate-50">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+            <div className="space-y-12">
+              <div className="text-center space-y-4">
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">Presentación del Proyecto</h2>
+                <p className="mx-auto max-w-2xl text-lg text-slate-600">
+                  Conoce la visión y objetivos de Cóndor View a través de nuestro pitch. El equipo presenta 
+                  la propuesta de valor, el impacto esperado y las oportunidades que ofrece este proyecto innovador.
+                </p>
+              </div>
+              
+              <div className="flex justify-center">
+                <div className="relative w-full max-w-4xl">
+                  <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-4 shadow-lg">
+                    <video
+                      className="w-full h-full object-cover rounded-xl shadow-md"
+                      controls
+                      preload="metadata"
+                      poster="/condorview-logo-italy.jpeg"
+                    >
+                      <source src="/condor-view-demo.mp4" type="video/mp4" />
+                      Tu navegador no soporta la reproducción de videos HTML5.
+                    </video>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="text-center">
+                <p className="text-sm text-slate-500 max-w-xl mx-auto">
+                  Pitch preparado por el equipo de Tecnologías Espaciales presentando la propuesta de valor 
+                  y el potencial impacto del proyecto Cóndor View.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Etapas del Proyecto */}
+        <section className="w-full py-16 md:py-24 bg-white">
           <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="space-y-12">
               <div className="text-center space-y-4">
@@ -369,12 +408,13 @@ export default function CondorViewPage() {
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="border-0 shadow-sm hover:shadow-md transition-shadow bg-white">
                   <CardHeader className="text-center pb-4">
-                    <CardTitle className="text-xl text-slate-900">Monitoreo Ambiental y Climático</CardTitle>
+                    <CardTitle className="text-xl text-slate-900">Monitoreo Ambiental y Recursos Naturales</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CardDescription className="text-center text-slate-600">
-                      Seguimiento de cambios en ecosistemas, detección de deforestación y monitoreo de variables 
-                      climáticas para investigación y conservación.
+                      Seguimiento de cambios en ecosistemas, detección de deforestación, monitoreo de variables 
+                      climáticas, exploración y evaluación de recursos minerales, gestión forestal y recursos hídricos 
+                      para uso sostenible.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -429,15 +469,60 @@ export default function CondorViewPage() {
 
                 <Card className="border-0 shadow-sm hover:shadow-md transition-shadow bg-white">
                   <CardHeader className="text-center pb-4">
-                    <CardTitle className="text-xl text-slate-900">Recursos Naturales</CardTitle>
+                    <CardTitle className="text-xl text-slate-900">Seguimiento y Trazabilidad</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CardDescription className="text-center text-slate-600">
-                      Exploración y monitoreo de recursos minerales, gestión forestal y evaluación de 
-                      recursos hídricos para uso sostenible.
-                    </CardDescription>
+                    Nuestro sistema permite monitorear en tiempo real la ubicación y el estado de vehículos, barcos, contenedores y cargas, optimizando rutas y garantizando la integridad de la mercancía. Además, proporciona un canal de comunicación confiable en tiempo real, superando las limitaciones de los sistemas actuales que dependen de 4G/5G y pueden perder datos ante la falta de conectividad.                    </CardDescription>
                   </CardContent>
                 </Card>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Mendoza FUTURA Section */}
+        <section className="w-full py-16 md:py-24 bg-white">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+              <div className="space-y-6">
+                <div className="space-y-4">
+                  <div className="flex items-center space-x-3 mb-4">
+                    <span className="text-3xl">🏆</span>
+                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">
+                      Reconocimiento en Mendoza FUTURA
+                    </h2>
+                  </div>
+                  <p className="text-lg text-slate-600 leading-relaxed">
+                    Cóndor View fue seleccionado para participar en <strong>Mendoza FUTURA</strong>, la principal expo de 
+                    innovación y tecnología de la provincia de Mendoza, donde presentamos nuestras capacidades de análisis 
+                    predictivo con inteligencia artificial aplicada a imágenes satelitales.
+                  </p>
+                  <p className="text-lg text-slate-600 leading-relaxed">
+                    Este reconocimiento valida nuestro enfoque innovador y destaca el potencial de nuestro proyecto para 
+                    generar impacto real en la sociedad a través de soluciones tecnológicas de vanguardia.
+                  </p>
+                  <div className="flex flex-wrap gap-2 mt-6">
+                    <span className="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">
+                      Expo de Innovación
+                    </span>
+                    <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
+                      Tecnología
+                    </span>
+                    <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
+                      Mendoza FUTURA
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="p-4 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl">
+                  <img
+                    src="/mendoza-futura.jpeg"
+                    alt="Participación de Cóndor View en Mendoza FUTURA"
+                    className="h-full w-full object-cover rounded-xl shadow-lg"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -472,6 +557,38 @@ export default function CondorViewPage() {
                     Volver al inicio
                   </Button>
                 </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Instituciones que nos acompañan */}
+        <section className="w-full py-16 bg-slate-50">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+            <h2 className="text-2xl font-bold text-center mb-8 text-slate-900">
+              Instituciones que nos acompañan
+            </h2>
+            
+            <div className="overflow-hidden relative w-full">
+              <div className="flex animate-scroll-continuous">
+                {/* Primera secuencia de logos */}
+                <div className="flex items-center space-x-24 flex-shrink-0">
+                  <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain" />
+                  <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain" />
+                  <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain" />
+                  <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain" />
+                </div>
+                
+                {/* Espaciado entre secuencias */}
+                <div className="w-24 flex-shrink-0"></div>
+                
+                {/* Segunda secuencia idéntica para loop continuo */}
+                <div className="flex items-center space-x-24 flex-shrink-0">
+                  <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain" />
+                  <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain" />
+                  <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain" />
+                  <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain" />
+                </div>
               </div>
             </div>
           </div>

@@ -15,43 +15,51 @@ import {
   Cpu,
 } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import emailjs from "@emailjs/browser"
 
 const integrantes = [
   {
     name: "Agustín Muñoz",
-    role: "Estudiante avanzado de Ingeniería en Sistemas",
+    title: "Est. Ing. en Sistemas",
+    role: "AI/Deep Learning Engineer (Jr.)",
     image: "/equipo/agustin-munoz.jpeg",
+  },
+    {
+    name: "Emanuel Gallo",
+    title: "Est. Ing. en Informática",
+    role: "AI/Deep Learning Engineer (Jr.)",
+    image: "/equipo/emanuel-gallo.jpeg",
+  },
+   {
+    name: "Lautaro Sanz",
+    title: "Est. Ing. en Sistemas",
+    role: "AI/Deep Learning Engineer (Jr.)",
+    image: "/equipo/lautaro-sanz.jpeg",
+  },
+    {
+    name: "Victoria Caro",
+    title: "Est. Ing. en Sistemas",
+    role: "AI/Deep Learning Engineer (Jr.)",
+    image: "/equipo/victoria-caro.jpeg",
   },
   {
     name: "Candela Balverde",
-    role: "Estudiante avanzado de Ingeniería Industrial",
+    title: "Est. Ing. Industrial",
+    role: "Analista Junior de Desarrollo y Ejecución de Proyectos",
     image: "/equipo/candela-balverde.jpeg",
   },
   {
     name: "Julieta Baigorria",
-    role: "Estudiante avanzada de Ingeniería Industrial",
+    title: "Est. Ing. Industrial",
+    role: "Analista Junior de Desarrollo y Ejecución de Proyectos",
     image: "/equipo/julieta-baigorria.jpeg",
   },
   {
     name: "Delfina Batura",
-    role: "Estudiante avanzado de Ingeniería Industrial",
+    title: "Est. Ing. Industrial",
+    role: "Analista Junior de Desarrollo y Ejecución de Proyectos",
     image: "/equipo/delfina-batura.jpeg",
-  },
-  {
-    name: "Emanuel Gallo",
-    role: "Estudiante avanzado de Ingeniería Informática",
-    image: "/equipo/emanuel-gallo.jpeg",
-  },
-  {
-    name: "Lautaro Sanz",
-    role: "Estudiante avanzado de Ingeniería Informática",
-    image: "/equipo/lautaro-sanz.jpeg",
-  },
-  {
-    name: "Victoria Caro",
-    role: "Estudiante avanzada de Ingeniería en Sistemas",
-    image: "/equipo/victoria-caro.jpeg",
   },
   {
     name: "Angel Quiles",
@@ -345,21 +353,21 @@ export default function LandingPage() {
         <section id="proyectos" className="w-full py-16 md:py-24 bg-white">
           <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="text-center space-y-4 mb-12">
-              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">Proyectos Destacados</h2>
+              <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">Proyecto Principal</h2>
               <p className="mx-auto max-w-2xl text-lg text-slate-600">
-                Conocé algunas de nuestras iniciativas más innovadoras que están generando impacto real en la sociedad.
+                Conocé nuestra iniciativa más innovadora que está generando impacto real en la sociedad a través de inteligencia artificial aplicada al análisis satelital.
               </p>
             </div>
-            <div className="grid gap-8 lg:grid-cols-2">
-              {/* Cóndor View */}
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-gradient-to-br from-blue-50 to-white">
+            <div className="flex justify-center">
+              {/* Cóndor View - Proyecto principal centrado */}
+              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-gradient-to-br from-blue-50 to-white max-w-2xl w-full">
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-3 mb-4">
                     <CardTitle className="text-2xl text-slate-900">Cóndor View</CardTitle>
                   </div>
                   <div>
                     <img
-                      src="/condorview-logo-italy.jpeg"
+                      src="/condorview-logo.png"
                       alt="Logo de Condor View"
                       className="h-[20rem] w-auto object-contain mx-auto mb-4"
                     />
@@ -375,7 +383,7 @@ export default function LandingPage() {
                     como sequías, deforestación y cambios en el uso del suelo, proporcionando alertas tempranas para la
                     toma de decisiones.
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 justify-center">
                     <span className="px-3 py-1 bg-blue-100 text-custom-blue rounded-full text-sm font-medium">
                       Deep Learning
                     </span>
@@ -386,47 +394,13 @@ export default function LandingPage() {
                       Predictivo
                     </span>
                   </div>
-                  <div className="mt-4">
+                  <div className="mt-4 text-center">
                     <Link
                       href="/condor-view"
-                      className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                      className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium"
                     >
-                      Ver más
+                      Ver más detalles
                     </Link>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Proyecto Placeholder */}
-              <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow bg-gradient-to-br from-slate-50 to-white">
-                <CardHeader className="pb-4">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <CardTitle className="text-2xl text-slate-900">GeoMonitor</CardTitle>
-                  </div>
-                  <div>
-                    <img
-                      src="/geomonitor-logo.png"
-                      alt="Logo de Condor View"
-                      className="h-[20rem] w-auto object-contain mx-auto mb-4"
-                    />
-                  </div>
-                  <CardDescription className="text-lg text-slate-600">
-                    Plataforma de monitoreo geoespacial en tiempo real para gestión territorial y ambiental.
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-slate-600">
-                    Sistema integrado de análisis geoespacial que combina datos satelitales, sensores IoT y modelos
-                    predictivos para el monitoreo continuo de variables ambientales y territoriales.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">IoT</span>
-                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">
-                      Tiempo Real
-                    </span>
-                    <span className="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm font-medium">
-                      Geoespacial
-                    </span>
                   </div>
                 </CardContent>
               </Card>
@@ -529,6 +503,39 @@ export default function LandingPage() {
           </div>
         </section>
       </main>
+
+      {/* Carrusel de Logos / Instituciones */}
+      <section className="w-full py-16 bg-slate-50">
+        <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-8 text-slate-900">
+            Instituciones que nos acompañan
+          </h2>
+
+          <div className="overflow-hidden relative w-full">
+            <div className="flex animate-scroll-continuous">
+              {/* Primera secuencia de logos */}
+              <div className="flex items-center space-x-24 flex-shrink-0">
+                <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain" />
+                <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain" />
+                <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain" />
+                <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain" />
+              </div>
+              
+              {/* Espaciado entre secuencias */}
+              <div className="w-24 flex-shrink-0"></div>
+              
+              {/* Segunda secuencia idéntica para loop continuo */}
+              <div className="flex items-center space-x-24 flex-shrink-0">
+                <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain" />
+                <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain" />
+                <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain" />
+                <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* Footer */}
       <footer className="w-full py-8 bg-gradient-to-br from-blue-100 to-blue-200 text-custom-blue">
