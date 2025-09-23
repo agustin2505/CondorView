@@ -19,29 +19,24 @@ import emailjs from "@emailjs/browser"
 
 const integrantes = [
   {
-    name: "Adriano Izquierdo",
-    role: "Estudiante avanzado de Ingeniería en Sistemas",
-    image: "/equipo/adriano-izquierdo.jpeg",
-  },
-  {
     name: "Agustín Muñoz",
     role: "Estudiante avanzado de Ingeniería en Sistemas",
     image: "/equipo/agustin-munoz.jpeg",
   },
   {
-    name: "Angelo Conforti",
-    role: "Estudiante avanzado de Ingeniería en Sistemas",
-    image: "/equipo/angelo-conforti.jpeg",
+    name: "Candela Balverde",
+    role: "Estudiante avanzado de Ingeniería Industrial",
+    image: "/equipo/candela-balverde.jpeg",
   },
   {
-    name: "Dana Guzmán",
-    role: "Estudiante avanzada de Ingeniería en Sistemas",
-    image: "/equipo/dana-guzman.jpeg",
+    name: "Julieta Baigorria",
+    role: "Estudiante avanzada de Ingeniería Industrial",
+    image: "/equipo/julieta-baigorria.jpeg",
   },
   {
-    name: "Eliezer Rivero",
-    role: "Estudiante avanzado de Ingeniería en Sistemas",
-    image: "/equipo/eliezer-rivero.jpeg",
+    name: "Delfina Batura",
+    role: "Estudiante avanzado de Ingeniería Industrial",
+    image: "/equipo/delfina-batura.jpeg",
   },
   {
     name: "Emanuel Gallo",
@@ -49,24 +44,9 @@ const integrantes = [
     image: "/equipo/emanuel-gallo.jpeg",
   },
   {
-    name: "Julieta Chaki",
-    role: "Estudiante avanzada de Ingeniería Informática",
-    image: "/equipo/julieta-chaki.jpeg",
-  },
-  {
     name: "Lautaro Sanz",
     role: "Estudiante avanzado de Ingeniería Informática",
     image: "/equipo/lautaro-sanz.jpeg",
-  },
-  {
-    name: "Valentino Araya",
-    role: "Estudiante avanzado de Ingeniería en Sistemas",
-    image: "/equipo/valentino-araya.jpeg",
-  },
-  {
-    name: "Valentín Rubio",
-    role: "Estudiante avanzado de Ingeniería en Sistemas",
-    image: "/equipo/valentin-rubio.jpeg",
   },
   {
     name: "Victoria Caro",
@@ -87,13 +67,13 @@ const integrantes = [
   },
   {
     name: "Mariana Nunes",
-    role: "Desarrollo de negocios",
+    role: "Desarrollo de Negocios",
     title: "Mgtr. Desarrollo en Administración de Negocios",
     image: "/equipo/mariana-nunes.jpeg",
   },
   {
     name: "Roque Bielli",
-    role: "Director del Grupo",
+    role: "Director de Grupo",
     title: "Mgtr. Bioingeniero",
     image: "/equipo/roque-bielli.jpeg",
   },
@@ -379,7 +359,7 @@ export default function LandingPage() {
                   </div>
                   <div>
                     <img
-                      src="/condorview-logo.png"
+                      src="/condorview-logo-italy.jpeg"
                       alt="Logo de Condor View"
                       className="h-[20rem] w-auto object-contain mx-auto mb-4"
                     />
@@ -405,6 +385,14 @@ export default function LandingPage() {
                     <span className="px-3 py-1 bg-blue-100 text-custom-blue rounded-full text-sm font-medium">
                       Predictivo
                     </span>
+                  </div>
+                  <div className="mt-4">
+                    <Link
+                      href="/condor-view"
+                      className="inline-block px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+                    >
+                      Ver más
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
