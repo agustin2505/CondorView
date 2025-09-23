@@ -205,15 +205,14 @@ export default function CondorViewPage() {
               <div className="flex justify-center">
                 <div className="relative w-full max-w-4xl">
                   <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-4 shadow-lg">
-                    <video
-                      className="w-full h-full object-cover rounded-xl shadow-md"
-                      controls
-                      preload="metadata"
-                      poster="/condorview-logo-italy.jpeg"
-                    >
-                      <source src="/condor-view-demo.mp4" type="video/mp4" />
-                      Tu navegador no soporta la reproducción de videos HTML5.
-                    </video>
+                    <iframe
+                      className="w-full h-full rounded-xl shadow-md"
+                      src="https://player.vimeo.com/video/1121282709?badge=0&autopause=0&player_id=0&app_id=58479"
+                      title="Condor View - Pitch del Proyecto"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                      allowFullScreen
+                    ></iframe>
                   </div>
                 </div>
               </div>
@@ -223,7 +222,11 @@ export default function CondorViewPage() {
                   Pitch preparado por el equipo de Tecnologías Espaciales presentando la propuesta de valor 
                   y el potencial impacto del proyecto Cóndor View.
                 </p>
+                <p className="text-xs text-slate-400 mt-2">
+                  
+                </p>
               </div>
+              <script src="https://player.vimeo.com/api/player.js"></script>
             </div>
           </div>
         </section>
@@ -570,24 +573,21 @@ export default function CondorViewPage() {
             </h2>
             
             <div className="overflow-hidden relative w-full">
-              <div className="flex animate-scroll-continuous">
-                {/* Primera secuencia de logos */}
-                <div className="flex items-center space-x-24 flex-shrink-0">
-                  <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain" />
-                  <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain" />
-                  <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain" />
-                  <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain" />
+              <div className="flex animate-scroll-continuous whitespace-nowrap">
+                {/* Primera secuencia completa con mucho espaciado */}
+                <div className="flex items-center justify-around min-w-full flex-shrink-0 px-16">
+                  <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                  <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                  <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                  <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
                 </div>
                 
-                {/* Espaciado entre secuencias */}
-                <div className="w-24 flex-shrink-0"></div>
-                
                 {/* Segunda secuencia idéntica para loop continuo */}
-                <div className="flex items-center space-x-24 flex-shrink-0">
-                  <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain" />
-                  <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain" />
-                  <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain" />
-                  <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain" />
+                <div className="flex items-center justify-around min-w-full flex-shrink-0 px-16">
+                  <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                  <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                  <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                  <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
                 </div>
               </div>
             </div>

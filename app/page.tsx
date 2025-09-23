@@ -512,24 +512,21 @@ export default function LandingPage() {
           </h2>
 
           <div className="overflow-hidden relative w-full">
-            <div className="flex animate-scroll-continuous">
-              {/* Primera secuencia de logos */}
-              <div className="flex items-center space-x-24 flex-shrink-0">
-                <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain" />
-                <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain" />
-                <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain" />
-                <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain" />
+            <div className="flex animate-scroll-continuous whitespace-nowrap">
+              {/* Primera secuencia completa con mucho espaciado */}
+              <div className="flex items-center justify-around min-w-full flex-shrink-0 px-16">
+                <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
               </div>
               
-              {/* Espaciado entre secuencias */}
-              <div className="w-24 flex-shrink-0"></div>
-              
               {/* Segunda secuencia idéntica para loop continuo */}
-              <div className="flex items-center space-x-24 flex-shrink-0">
-                <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain" />
-                <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain" />
-                <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain" />
-                <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain" />
+              <div className="flex items-center justify-around min-w-full flex-shrink-0 px-16">
+                <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
+                <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
               </div>
             </div>
           </div>
