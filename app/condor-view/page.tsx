@@ -322,7 +322,7 @@ export default function CondorViewPage() {
                     <h3 className="text-lg font-semibold text-slate-900">Inferencia IA</h3>
                   </div>
                   <p className="text-slate-600 pl-11">
-                    Modelos Deep Learning implementados con PyTorch para análisis predictivo en tiempo real.
+                    Modelos Deep Learning implementados with PyTorch para análisis predictivo en tiempo real.
                   </p>
                 </div>
 
@@ -669,6 +669,62 @@ export default function CondorViewPage() {
                   </CardContent>
                 </Card>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Mendoza FUTURA */}
+        <section className="w-full py-16 md:py-24 bg-slate-50">
+          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+            <div className="space-y-12">
+              <div className="text-center space-y-4">
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">Presentación en Mendoza FUTURA</h2>
+                <p className="mx-auto max-w-2xl text-lg text-slate-600">
+                  Participamos en el prestigioso evento Mendoza FUTURA, donde presentamos nuestro proyecto Cóndor View 
+                  ante la comunidad científica y tecnológica de la región.
+                </p>
+              </div>
+
+              <Card className="border-0 shadow-lg bg-white max-w-4xl mx-auto">
+                <CardContent className="p-8">
+                  <div className="grid gap-8 lg:grid-cols-2 items-center">
+                    <div className="space-y-6">
+                      <div className="space-y-4">
+                        <h3 className="text-2xl font-bold text-slate-900">Participación en Mendoza FUTURA</h3>
+                        <p className="text-lg text-slate-600 leading-relaxed">
+                          Tuvimos el honor de participar en Mendoza FUTURA, donde presentamos nuestro proyecto 
+                          Cóndor View ante la comunidad educativa y tecnológica de la región. Fue una excelente 
+                          oportunidad para dar a conocer nuestro trabajo en análisis de imágenes satelitales 
+                          con inteligencia artificial.
+                        </p>
+                      </div>
+
+                      <div className="bg-blue-50 p-4 rounded-lg">
+                        <p className="text-blue-800 font-medium text-center">
+                          "Una valiosa experiencia que nos permitió conectar con la comunidad tecnológica 
+                          y compartir nuestra visión sobre el futuro del monitoreo ambiental."
+                        </p>
+                      </div>
+                    </div>
+                    
+                    <div className="relative">
+                      <div className="bg-gradient-to-br from-blue-100 to-blue-200 p-4 rounded-2xl">
+                        <img
+                          src="/mendoza-futura.jpeg"
+                          alt="Presentación de Cóndor View en Mendoza FUTURA"
+                          className="w-full h-auto object-cover rounded-xl shadow-lg"
+                        />
+                      </div>
+                      <div className="absolute -bottom-4 -right-4 bg-white p-3 rounded-lg shadow-lg">
+                        <div className="text-center">
+                          <div className="text-lg font-bold text-blue-600">Mendoza</div>
+                          <div className="text-sm text-slate-600">FUTURA</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
