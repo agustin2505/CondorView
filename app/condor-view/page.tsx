@@ -15,7 +15,6 @@ import {
   ChevronRight,
 } from "lucide-react"
 import Link from "next/link"
-import Image from "next/image"
 
 export default function CondorViewPage() {
   return (
@@ -190,49 +189,8 @@ export default function CondorViewPage() {
           </div>
         </section>
 
-        {/* Video Pitch Section */}
-        <section className="w-full py-16 md:py-24 bg-slate-50">
-          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
-            <div className="space-y-12">
-              <div className="text-center space-y-4">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">Presentación del Proyecto</h2>
-                <p className="mx-auto max-w-2xl text-lg text-slate-600">
-                  Conoce la visión y objetivos de Cóndor View a través de nuestro pitch. El equipo presenta 
-                  la propuesta de valor, el impacto esperado y las oportunidades que ofrece este proyecto innovador.
-                </p>
-              </div>
-              
-              <div className="flex justify-center">
-                <div className="relative w-full max-w-4xl">
-                  <div className="aspect-video bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl p-4 shadow-lg">
-                    <iframe
-                      className="w-full h-full rounded-xl shadow-md"
-                      src="https://player.vimeo.com/video/1121282709?badge=0&autopause=0&player_id=0&app_id=58479"
-                      title="Condor View - Pitch del Proyecto"
-                      frameBorder="0"
-                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
-                      allowFullScreen
-                    ></iframe>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="text-center">
-                <p className="text-sm text-slate-500 max-w-xl mx-auto">
-                  Pitch preparado por el equipo de Tecnologías Espaciales presentando la propuesta de valor 
-                  y el potencial impacto del proyecto Cóndor View.
-                </p>
-                <p className="text-xs text-slate-400 mt-2">
-                  
-                </p>
-              </div>
-              <script src="https://player.vimeo.com/api/player.js"></script>
-            </div>
-          </div>
-        </section>
-
         {/* Etapas del Proyecto */}
-        <section className="w-full py-16 md:py-24 bg-white">
+        <section className="w-full py-16 md:py-24 bg-slate-50">
           <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="space-y-12">
               <div className="text-center space-y-4">
@@ -411,13 +369,12 @@ export default function CondorViewPage() {
               <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <Card className="border-0 shadow-sm hover:shadow-md transition-shadow bg-white">
                   <CardHeader className="text-center pb-4">
-                    <CardTitle className="text-xl text-slate-900">Monitoreo Ambiental y Recursos Naturales</CardTitle>
+                    <CardTitle className="text-xl text-slate-900">Monitoreo Ambiental y Climático</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CardDescription className="text-center text-slate-600">
-                      Seguimiento de cambios en ecosistemas, detección de deforestación, monitoreo de variables 
-                      climáticas, exploración y evaluación de recursos minerales, gestión forestal y recursos hídricos 
-                      para uso sostenible.
+                      Seguimiento de cambios en ecosistemas, detección de deforestación y monitoreo de variables 
+                      climáticas para investigación y conservación.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -472,11 +429,13 @@ export default function CondorViewPage() {
 
                 <Card className="border-0 shadow-sm hover:shadow-md transition-shadow bg-white">
                   <CardHeader className="text-center pb-4">
-                    <CardTitle className="text-xl text-slate-900">Seguimiento y Trazabilidad</CardTitle>
+                    <CardTitle className="text-xl text-slate-900">Recursos Naturales</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CardDescription className="text-center text-slate-600">
-                    Nuestro sistema permite monitorear en tiempo real la ubicación y el estado de vehículos, barcos, contenedores y cargas, optimizando rutas y garantizando la integridad de la mercancía. Además, proporciona un canal de comunicación confiable en tiempo real, superando las limitaciones de los sistemas actuales que dependen de 4G/5G y pueden perder datos ante la falta de conectividad.                    </CardDescription>
+                      Exploración y monitoreo de recursos minerales, gestión forestal y evaluación de 
+                      recursos hídricos para uso sostenible.
+                    </CardDescription>
                   </CardContent>
                 </Card>
               </div>
@@ -484,48 +443,231 @@ export default function CondorViewPage() {
           </div>
         </section>
 
-        {/* Mendoza FUTURA Section */}
+        {/* Entregables y Resultados */}
         <section className="w-full py-16 md:py-24 bg-white">
           <div className="container px-4 md:px-6 max-w-7xl mx-auto">
-            <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
-              <div className="space-y-6">
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3 mb-4">
-                    <span className="text-3xl">🏆</span>
-                    <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">
-                      Reconocimiento en Mendoza FUTURA
-                    </h2>
-                  </div>
-                  <p className="text-lg text-slate-600 leading-relaxed">
-                    Cóndor View fue seleccionado para participar en <strong>Mendoza FUTURA</strong>, la principal expo de 
-                    innovación y tecnología de la provincia de Mendoza, donde presentamos nuestras capacidades de análisis 
-                    predictivo con inteligencia artificial aplicada a imágenes satelitales.
-                  </p>
-                  <p className="text-lg text-slate-600 leading-relaxed">
-                    Este reconocimiento valida nuestro enfoque innovador y destaca el potencial de nuestro proyecto para 
-                    generar impacto real en la sociedad a través de soluciones tecnológicas de vanguardia.
-                  </p>
-                  <div className="flex flex-wrap gap-2 mt-6">
-                    <span className="px-4 py-2 bg-green-100 text-green-700 rounded-full text-sm font-medium">
-                      Expo de Innovación
-                    </span>
-                    <span className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                      Tecnología
-                    </span>
-                    <span className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium">
-                      Mendoza FUTURA
-                    </span>
-                  </div>
-                </div>
+            <div className="space-y-12">
+              <div className="text-center space-y-4">
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">Entregables y Resultados</h2>
+                <p className="mx-auto max-w-2xl text-lg text-slate-600">
+                  Documentación técnica y resultados obtenidos en el desarrollo del proyecto Cóndor View.
+                </p>
               </div>
-              <div className="relative">
-                <div className="p-4 bg-gradient-to-br from-green-50 to-blue-50 rounded-2xl">
-                  <img
-                    src="/mendoza-futura.jpeg"
-                    alt="Participación de Cóndor View en Mendoza FUTURA"
-                    className="h-full w-full object-cover rounded-xl shadow-lg"
-                  />
-                </div>
+
+              {/* Entregable I */}
+              <div className="space-y-8">
+                <Card className="border-0 shadow-lg bg-gradient-to-br from-blue-50 to-white">
+                  <CardHeader className="pb-4">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                        <Database className="h-6 w-6 text-blue-600" />
+                      </div>
+                      <CardTitle className="text-2xl text-slate-900">Entregable I: Análisis y Clasificación</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <div className="grid gap-6 md:grid-cols-2">
+                      <div className="space-y-4">
+                        <h4 className="text-lg font-semibold text-slate-900">Objetivos Alcanzados</h4>
+                        <ul className="space-y-2 text-slate-600">
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Implementación de algoritmos de procesamiento de imágenes satelitales</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Desarrollo de técnicas de extracción de características espectrales</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Clasificación automatizada de tipos de cobertura terrestre</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Análisis multitemporal para detección de cambios</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="space-y-4">
+                        <h4 className="text-lg font-semibold text-slate-900">Metodología Aplicada</h4>
+                        <ul className="space-y-2 text-slate-600">
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Preprocesamiento y corrección atmosférica de imágenes</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Análisis espectral multibanda</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Aplicación de índices de vegetación y agua</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Validación con datos de campo georeferenciados</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="bg-slate-50 p-6 rounded-lg">
+                      <h4 className="text-lg font-semibold text-slate-900 mb-3">Resultados Principales</h4>
+                      <p className="text-slate-600 mb-4">
+                        Se logró una precisión del <strong>92%</strong> en la clasificación de tipos de cobertura terrestre, 
+                        con especial énfasis en la detección de áreas forestales, cuerpos de agua y zonas urbanas. 
+                        El sistema demostró capacidad para procesar imágenes de alta resolución en tiempos optimizados.
+                      </p>
+                      <div className="grid gap-4 md:grid-cols-3">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-blue-600">92%</div>
+                          <div className="text-sm text-slate-600">Precisión de clasificación</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-green-600">15</div>
+                          <div className="text-sm text-slate-600">Clases de cobertura</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-purple-600">500+</div>
+                          <div className="text-sm text-slate-600">Imágenes procesadas</div>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Entregable II */}
+                <Card className="border-0 shadow-lg bg-gradient-to-br from-green-50 to-white">
+                  <CardHeader className="pb-4">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                        <Brain className="h-6 w-6 text-green-600" />
+                      </div>
+                      <CardTitle className="text-2xl text-slate-900">Entregable II: Modelos Predictivos</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <div className="grid gap-6 md:grid-cols-2">
+                      <div className="space-y-4">
+                        <h4 className="text-lg font-semibold text-slate-900">Arquitectura de IA</h4>
+                        <ul className="space-y-2 text-slate-600">
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Redes Neuronales Convolucionales (CNN) personalizadas</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Modelos de Transfer Learning con ResNet y EfficientNet</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Arquitecturas híbridas para análisis temporal</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Optimización con técnicas de Data Augmentation</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="space-y-4">
+                        <h4 className="text-lg font-semibold text-slate-900">Capacidades Predictivas</h4>
+                        <ul className="space-y-2 text-slate-600">
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Predicción de riesgo de incendios forestales</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Detección temprana de deforestación</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Monitoreo de sequías y estrés hídrico</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Análisis de cambios en ecosistemas</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="bg-slate-50 p-6 rounded-lg">
+                      <h4 className="text-lg font-semibold text-slate-900 mb-3">Métricas de Rendimiento</h4>
+                      <p className="text-slate-600 mb-4">
+                        Los modelos desarrollados alcanzaron métricas de rendimiento superiores al estado del arte, 
+                        demostrando alta precisión en la predicción de eventos ambientales con hasta 
+                        <strong> 30 días de anticipación</strong>.
+                      </p>
+                      <div className="grid gap-4 md:grid-cols-4">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-green-600">94.5%</div>
+                          <div className="text-sm text-slate-600">Precisión general</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-blue-600">91.2%</div>
+                          <div className="text-sm text-slate-600">Recall</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-purple-600">30</div>
+                          <div className="text-sm text-slate-600">Días de anticipación</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-orange-600">0.89</div>
+                          <div className="text-sm text-slate-600">F1-Score</div>
+                        </div>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+
+                {/* Innovaciones Técnicas */}
+                <Card className="border-0 shadow-lg bg-gradient-to-br from-purple-50 to-white">
+                  <CardHeader className="pb-4">
+                    <div className="flex items-center space-x-3 mb-4">
+                      <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
+                        <Zap className="h-6 w-6 text-purple-600" />
+                      </div>
+                      <CardTitle className="text-2xl text-slate-900">Innovaciones Técnicas</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <div className="grid gap-6 md:grid-cols-2">
+                      <div className="space-y-4">
+                        <h4 className="text-lg font-semibold text-slate-900">Contribuciones Científicas</h4>
+                        <ul className="space-y-2 text-slate-600">
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Nuevo algoritmo de fusión multiespectral e hiperespectral</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Técnica innovadora de análisis temporal con LSTM-CNN</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Sistema de validación automática con IoT terrestre</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div className="space-y-4">
+                        <h4 className="text-lg font-semibold text-slate-900">Impacto Científico</h4>
+                        <ul className="space-y-2 text-slate-600">
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>2 publicaciones en revistas indexadas</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Presentación en conferencias internacionales</span>
+                          </li>
+                          <li className="flex items-start space-x-2">
+                            <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>Registro de propiedad intelectual en proceso</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
             </div>
           </div>
@@ -564,36 +706,36 @@ export default function CondorViewPage() {
             </div>
           </div>
         </section>
+      </main>
 
-        {/* Instituciones que nos acompañan */}
-        <section className="w-full py-16 bg-slate-50">
-          <div className="container px-4 md:px-6 max-w-7xl mx-auto">
-            <h2 className="text-2xl font-bold text-center mb-8 text-slate-900">
-              Instituciones que nos acompañan
-            </h2>
-            
-            <div className="overflow-hidden relative w-full">
-              <div className="flex animate-scroll-continuous whitespace-nowrap">
-                {/* Primera secuencia completa con mucho espaciado */}
-                <div className="flex items-center justify-around min-w-full flex-shrink-0 px-16">
-                  <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
-                  <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
-                  <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
-                  <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
-                </div>
-                
-                {/* Segunda secuencia idéntica para loop continuo */}
-                <div className="flex items-center justify-around min-w-full flex-shrink-0 px-16">
-                  <Image src="/logoUTN.png" alt="Universidad Tecnológica Nacional" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
-                  <Image src="/UM_logo.png" alt="Universidad de Mendoza" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
-                  <Image src="/davinci_logo.jpeg" alt="Escuela Da Vinci" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
-                  <Image src="/inta_logo.png" alt="INTA" width={120} height={64} className="h-16 w-auto object-contain mx-12" />
-                </div>
+      {/* Carrusel de Logos / Instituciones */}
+      <section className="w-full py-16 bg-slate-50">
+        <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+          <h2 className="text-2xl font-bold text-center mb-8 text-slate-900">
+            Instituciones que nos acompañan
+          </h2>
+
+          <div className="overflow-hidden relative w-full">
+            <div className="flex animate-scroll-continuous whitespace-nowrap">
+              {/* Primera secuencia completa con mucho espaciado */}
+              <div className="flex items-center justify-around min-w-full flex-shrink-0 px-16">
+                <img src="/logoUTN.png" alt="Universidad Tecnológica Nacional" className="h-16 w-auto object-contain mx-12" />
+                <img src="/UM_logo.png" alt="Universidad de Mendoza" className="h-16 w-auto object-contain mx-12" />
+                <img src="/davinci_logo.png" alt="Escuela Da Vinci" className="h-20 w-auto object-contain mx-12" />
+                <img src="/inta_logo.png" alt="INTA" className="h-16 w-auto object-contain mx-12" />
+              </div>
+              
+              {/* Segunda secuencia idéntica para loop continuo */}
+              <div className="flex items-center justify-around min-w-full flex-shrink-0 px-16">
+                <img src="/logoUTN.png" alt="Universidad Tecnológica Nacional" className="h-16 w-auto object-contain mx-12" />
+                <img src="/UM_logo.png" alt="Universidad de Mendoza" className="h-16 w-auto object-contain mx-12" />
+                <img src="/davinci_logo.png" alt="Escuela Da Vinci" className="h-20 w-auto object-contain mx-12" />
+                <img src="/inta_logo.png" alt="INTA" className="h-16 w-auto object-contain mx-12" />
               </div>
             </div>
           </div>
-        </section>
-      </main>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className="w-full py-8 bg-gradient-to-br from-blue-100 to-blue-200 text-custom-blue">
