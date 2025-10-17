@@ -167,9 +167,7 @@ export default function LandingPage() {
                   <span className="block text-custom-blue">Espaciales</span>
                 </h1>
                 <p className="mx-auto max-w-3xl text-lg md:text-xl text-slate-600 leading-relaxed">
-                  Conectamos el conocimiento académico con las necesidades reales de la sociedad a través de soluciones
-                  tecnológicas innovadoras aplicadas al espacio, utilizando inteligencia artificial, visión
-                  computacional y análisis geoespacial.
+
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -201,18 +199,9 @@ export default function LandingPage() {
                 <div className="space-y-4">
                   <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">¿Quiénes somos?</h2>
                   <p className="text-lg text-slate-600 leading-relaxed">
-                    Somos un grupo de extensión universitaria de la Universidad Tecnológica Nacional -
-                    Facultad Regional de San Rafael, conformado por estudiantes, ingenieros, y profesionales
-                    comprometidos con el desarrollo de soluciones tecnológicas innovadoras aplicadas al espacio.
-                  </p>
+Somos un grupo de extensión universitaria de la UTN-FRSR, integrado por estudiantes, ingenieros y profesionales comprometidos con el desarrollo de tecnologías espaciales e innovaciones basadas en inteligencia artificial.                  </p>
                   <p className="text-lg text-slate-600 leading-relaxed">
-                    Nuestro enfoque interdisciplinario combina la investigación académica de vanguardia con la
-                    aplicación práctica de tecnologías emergentes como la inteligencia artificial, visión computacional,
-                    machine learning y análisis geoespacial.
-                  </p>
-                  <p className="text-lg text-slate-600 leading-relaxed">
-                    Trabajamos para que el conocimiento generado en la universidad tenga un impacto real en la sociedad,
-                    especialmente en áreas críticas como el monitoreo ambiental y la planificación territorial.
+
                   </p>
                   <div>
                     <img src="/logoUTN.png"
@@ -233,6 +222,37 @@ export default function LandingPage() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* Video Extensión Universitaria */}
+          <div className="mt-[6rem]">
+            <div className="container px-4 md:px-6 max-w-7xl mx-auto">
+              <Card className="border-0 shadow-lg bg-gradient-to-br from-blue-50 to-white">
+                <CardContent className="p-8">
+                  <div className="space-y-8">
+                    <div className="text-center space-y-4">
+                      <h3 className="text-2xl font-bold tracking-tight text-slate-900">Extensión Universitaria</h3>
+                      <p className="mx-auto max-w-3xl text-lg text-slate-600 leading-relaxed">
+                        "La extensión universitaria es el puente que conecta el conocimiento académico con las necesidades reales de la sociedad, generando un impacto tangible en el desarrollo tecnológico y social."
+                      </p>
+                    </div>
+                    <div className="flex justify-center">
+                      <div className="w-full max-w-4xl">
+                        <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                          <iframe
+                            src="https://player.vimeo.com/video/1128356491?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+                            className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+                            frameBorder="0"
+                            allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                            title="Extensión Universitaria - Transferencia de Conocimiento Tecnológico"
+                          ></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
 
@@ -374,7 +394,7 @@ export default function LandingPage() {
                   </div>
                   <CardDescription className="text-lg text-slate-600">
                     Sistema de análisis predictivo basado en imágenes satelitales con visión computacional y deep
-                    learning.
+                    learning.                  
                   </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">

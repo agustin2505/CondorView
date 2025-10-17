@@ -46,8 +46,7 @@ export default function CondorViewPage() {
                     Cóndor View
                   </h1>
                   <p className="text-xl text-slate-600 leading-relaxed max-w-2xl">
-                    Sistema de análisis predictivo basado en imágenes satelitales con visión computacional y deep learning
-                    para el monitoreo ambiental inteligente.
+                    Sistema avanzado de monitoreo satelital que integra visión computacional y modelos de Deep Learning para identificar patrones y predecir fenómenos ambientales.
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
@@ -71,7 +70,7 @@ export default function CondorViewPage() {
               <div className="flex-1">
                 <div className="relative">
                   <img
-                    src="/condorview-logo-italy.jpeg"
+                    src="/condorview-logo.png"
                     alt="Logo de Cóndor View"
                     className="h-96 w-auto object-contain mx-auto"
                   />
@@ -88,11 +87,41 @@ export default function CondorViewPage() {
               <div className="text-center space-y-4">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">¿Qué es Cóndor View?</h2>
                 <p className="mx-auto max-w-3xl text-lg text-slate-600 leading-relaxed">
-                  Cóndor View desarrolla una plataforma de análisis de imágenes satelitales aplicando visión computacional 
-                  y deep learning. Utiliza imágenes multiespectrales e hiperespectrales, preprocesadas y analizadas con 
-                  redes neuronales profundas (CNN). El objetivo: predecir contingencias como incendios, inundaciones o 
-                  deforestación, generando alertas tempranas y mapas de riesgo dinámicos.
+                  Cóndor View es una plataforma de análisis de imágenes satelitales basada en inteligencia artificial. Utiliza imágenes 
+                  multiespectrales e hiperespectrales procesadas con redes neuronales profundas (CNN) para anticipar 
+                  contingencias como incendios, inundaciones o deforestación, generando alertas tempranas y mapas de riesgo dinámicos.
                 </p>
+              </div>
+
+              {/* Video Presentación Cóndor View */}
+              <div className="mt-12">
+                <Card className="border-0 shadow-lg bg-gradient-to-br from-blue-50 to-white">
+                  <CardContent className="p-8">
+                    <div className="space-y-8">
+                      <div className="text-center space-y-4">
+                        <h3 className="text-2xl font-bold tracking-tight text-slate-900">Presentación del Proyecto</h3>
+                        <p className="mx-auto max-w-3xl text-lg text-slate-600 leading-relaxed">
+                          Conocé en detalle qué es Cóndor View y cuáles son nuestros primeros entregables. 
+                        </p>
+                      </div>
+                      <div className="flex justify-center">
+                        <div className="w-full max-w-4xl">
+                          <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                            <iframe
+                              src="https://player.vimeo.com/video/1128354543?badge=0&autopause=0&quality_selector=1&player_id=0&app_id=58479"
+                              className="absolute top-0 left-0 w-full h-full rounded-xl shadow-lg"
+                              frameBorder="0"
+                              allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
+                              title="Cóndor View - Presentación del Proyecto y Primeros Entregables"
+                            ></iframe>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="bg-slate-50 p-6 rounded-lg text-center">
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
               </div>
 
               {/* Características Principales */}
@@ -194,7 +223,7 @@ export default function CondorViewPage() {
           <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="space-y-12">
               <div className="text-center space-y-4">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">Etapas del Proyecto</h2>
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">Fases del Proyecto</h2>
                 <p className="mx-auto max-w-2xl text-lg text-slate-600">
                   El desarrollo de Cóndor View se estructura en tres módulos principales que se complementan para 
                   crear una solución integral.
@@ -208,7 +237,7 @@ export default function CondorViewPage() {
                       <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
                         <Camera className="h-6 w-6 text-blue-600" />
                       </div>
-                      <CardTitle className="text-xl text-slate-900">Módulo I</CardTitle>
+                      <CardTitle className="text-xl text-slate-900">Fase I</CardTitle>
                     </div>
                     <CardDescription className="text-lg font-semibold text-blue-600 mb-4">
                       Clasificación y análisis de imágenes
@@ -228,7 +257,7 @@ export default function CondorViewPage() {
                       <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
                         <Brain className="h-6 w-6 text-green-600" />
                       </div>
-                      <CardTitle className="text-xl text-slate-900">Módulo II</CardTitle>
+                      <CardTitle className="text-xl text-slate-900">Fase II</CardTitle>
                     </div>
                     <CardDescription className="text-lg font-semibold text-green-600 mb-4">
                       Entrenamiento de modelos y evaluación
@@ -248,7 +277,7 @@ export default function CondorViewPage() {
                       <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
                         <BarChart3 className="h-6 w-6 text-purple-600" />
                       </div>
-                      <CardTitle className="text-xl text-slate-900">Módulo III</CardTitle>
+                      <CardTitle className="text-xl text-slate-900">Fase III</CardTitle>
                     </div>
                     <CardDescription className="text-lg font-semibold text-purple-600 mb-4">
                       Visualización de sucesos en imágenes
@@ -448,7 +477,7 @@ export default function CondorViewPage() {
           <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <div className="space-y-12">
               <div className="text-center space-y-4">
-                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">Entregables y Resultados</h2>
+                <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">Hitos y entregables</h2>
                 <p className="mx-auto max-w-2xl text-lg text-slate-600">
                   Documentación técnica y resultados obtenidos en el desarrollo del proyecto Cóndor View.
                 </p>
@@ -462,7 +491,7 @@ export default function CondorViewPage() {
                       <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
                         <Database className="h-6 w-6 text-blue-600" />
                       </div>
-                      <CardTitle className="text-2xl text-slate-900">Entregable I: Análisis y Clasificación</CardTitle>
+                      <CardTitle className="text-2xl text-slate-900">Análisis y Clasificación</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-6">
@@ -542,7 +571,7 @@ export default function CondorViewPage() {
                       <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
                         <Brain className="h-6 w-6 text-green-600" />
                       </div>
-                      <CardTitle className="text-2xl text-slate-900">Entregable II: Modelos Predictivos</CardTitle>
+                      <CardTitle className="text-2xl text-slate-900">Modelos Predictivos</CardTitle>
                     </div>
                   </CardHeader>
                   <CardContent className="space-y-6">
@@ -680,8 +709,8 @@ export default function CondorViewPage() {
               <div className="text-center space-y-4">
                 <h2 className="text-3xl font-bold tracking-tight sm:text-4xl text-slate-900">Presentación en Mendoza FUTURA</h2>
                 <p className="mx-auto max-w-2xl text-lg text-slate-600">
-                  Participamos en el prestigioso evento Mendoza FUTURA, donde presentamos nuestro proyecto Cóndor View 
-                  ante la comunidad científica y tecnológica de la región.
+                  Participamos en el evento tecnológico más importante 
+                  de la región, presentando nuestro proyecto Cóndor View ante la comunidad científica y educativa.
                 </p>
               </div>
 
@@ -692,17 +721,13 @@ export default function CondorViewPage() {
                       <div className="space-y-4">
                         <h3 className="text-2xl font-bold text-slate-900">Participación en Mendoza FUTURA</h3>
                         <p className="text-lg text-slate-600 leading-relaxed">
-                          Tuvimos el honor de participar en Mendoza FUTURA, donde presentamos nuestro proyecto 
-                          Cóndor View ante la comunidad educativa y tecnológica de la región. Fue una excelente 
-                          oportunidad para dar a conocer nuestro trabajo en análisis de imágenes satelitales 
-                          con inteligencia artificial.
+                          Durante el encuentro compartimos los avances y resultados de Cóndor View, destacando su aporte al monitoreo ambiental mediante inteligencia artificial y datos satelitales.
                         </p>
                       </div>
 
                       <div className="bg-blue-50 p-4 rounded-lg">
                         <p className="text-blue-800 font-medium text-center">
-                          "Una valiosa experiencia que nos permitió conectar con la comunidad tecnológica 
-                          y compartir nuestra visión sobre el futuro del monitoreo ambiental."
+                          “Una experiencia enriquecedora que nos permitió conectar con especialistas del sector y recibir valiosos aportes para el desarrollo del proyecto.”
                         </p>
                       </div>
                     </div>
